@@ -1,0 +1,738 @@
+/* OVERRIDE BOOTSTRAP STYLES
+ * Dayze & Alice
+* -------------------------------------------------- */
+
+/*@font-face{font-family:"TradeGothicW01Cn18";
+  src:url("../fonts/TradeGothicW01Cn18.ttf") format("truetype")
+}
+@font-face{font-family:"TradeGothicW01-BoldCn20";
+  src:url("../fonts/TradeGothicW01-BoldCn20.ttf") format("truetype")
+}*/
+
+.navbar-toggle {
+    margin-top: 12px !important;
+}
+  
+.navbar-nav > li {
+  font-family:'Roboto', Helvetica, Arial, sans-serif;
+  font-size:14px;
+}
+  
+.navbar-nav > li > a {
+    color: #9d9d9d;
+    text-transform:uppercase;
+}
+  
+.navbar-nav > li > a:hover {
+    color: #00b388 !important;
+}
+  
+@media (min-width: 768px){
+    .navbar-nav {
+        float: right !important;
+    }
+}
+  
+/* GLOBAL STYLES
+* Padding below the footer and lighter body text
+* -------------------------------------------------- */
+  
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+    font-family:'Roboto', Helvetica, Arial, sans-serif !important; 
+    line-height: 22px !important;
+}
+  
+h1{font-family:'Roboto Condensed', Helvetica, Arial, sans-serif !important; font-size:58px;}
+h2{font-family:'Roboto Condensed', Helvetica, Arial, sans-serif !important;font-size:48px;}
+h3{font-family:'Roboto Condensed', Helvetica, Arial, sans-serif !important;font-size:36px;}
+h4{font-family:'Roboto', Helvetica, Arial, sans-serif !important;font-size:24px;}
+h5{font-family:'Roboto Condensed', Helvetica, Arial, sans-serif !important;font-size:20px;}
+h6{font-family:'Roboto Condensed', Helvetica, Arial, sans-serif !important;font-size:18px;}
+  
+.label-secondary {
+    background-color: #aaaaaa;
+}
+  
+  
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+  
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+  
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    height: 550px;
+    margin-bottom: 0px;
+}
+.carousel-caption {
+    z-index: 10; /* Since positioning the image, we need to help out the caption */
+    font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-size:60px;
+    font-weight:bold;
+    bottom:180px !important;
+    line-height: 58px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 550px;
+    background-color: #777;
+}
+
+.carousel-inner .item{
+    height:550px;
+    background-size:cover;
+    background-position: top center !important;
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 550px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.jumbotron {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 80px !important;
+    color: #fff  !important; 
+    background-color: #222222!important;
+    border-radius: 0px !important;
+}
+
+.lm_btn-green {
+    background-color: #00b388 !important;
+    border-color: #00b388!important; 
+    color: #ffffff !important;   
+    font-size: 13px !important;  
+    letter-spacing: 0.5px; 
+}
+
+.no-padding {
+    padding: 0px !important;  
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.order-md-2{-ms-flex-order:2;order:2}
+
+.order-md-1{-ms-flex-order:1;order:1}
+
+/* Autoship Manager page
+------------------------- */
+.pagepad{
+margin:30px 0;
+}
+
+.pagepad-small{
+    padding-bottom:20px;
+}
+
+.welcome-text{
+    font-size:20px;
+    font-weight:bold;
+    padding:10px 0;
+    font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+}
+
+.btn-primary, .btn-primary:active:focus, .btn-primary:active, .btn-primary.active, .btn-primary.focus {
+    color: #ffffff !important;
+    border: none;
+    background-color: #00b388 !important;
+    border-color: #00b388 !important;
+    font-family:'Roboto', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight:bold !important;   
+}
+
+.btn-secondary, .btn-secondary:active:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary.focus {
+    color: #00b388 !important;
+    background-color: #ffffff !important;
+    border-color: #00b388 !important;
+    font-family:'Roboto', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+    .fixed-element {
+        position: fixed;
+    }
+}
+
+.separator{
+    border: 1px solid #eee;
+    width:auto;
+    margin:10px 0;
+}
+
+.title-bg{
+    padding: 15px 15px;
+    background-color:#ececec;
+    color:#222;
+}
+
+
+.black-bg{
+    padding: 0 10px 10px 10px;
+    background-color:#222;
+    color:#fff;
+    margin-bottom: 30px;
+}
+
+.list-group-item {
+    border: 0px !important;
+}
+
+.cart-box{
+    padding: 10px;
+    background: #eee;
+    margin-top: 10px;
+}
+
+.badge-cart {
+    background-color: #00b388 !important;
+    display: inline-block;
+    min-width: 10px;
+    padding: 5px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.badge-danger {
+    background-color: #ee1b22 !important;
+    font-size: 11px !important;
+}
+
+.invalid-feedback {
+    position: relative;
+    width: 350px;
+}
+
+.form-error-message {
+    font-size: 11px !important;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.bottom-pad{
+    padding-bottom:20px;
+}
+
+.cart-price{
+    font-weight:bold;
+}
+
+.cart-label{
+    font-size:16px !important;
+}
+
+.cart-total{
+    font-weight:bold;
+    font-size:20px;
+    color:#00b388;
+}
+
+.cart-total-hr{
+    background-color:#ccc;
+}
+
+
+.text-white {
+    color: #ffffff !important;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: normal !important;
+    color: #484848;
+}
+
+.agree-terms-and-conditions {
+    font-size: 16px;
+    font-weight: bold !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-image: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+}
+
+
+div#shopping_cart {
+    border: 1px solid #ccc !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0px 0px 5px 0px !important;
+    margin-bottom: 10px;
+}
+
+.cart-total-bold {
+    font-weight: bold;
+}
+
+.cart-text {
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-total-background {
+    background-color: #222 !important;
+    color: #ffffff !important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+/* PROGRAMS
+-------------------------------------------------- */
+[id^='customer_trainedMusicSeries_'] {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.program_logo {
+    border: 1px solid #eee;
+    height: 190px !important;
+    margin-right: 10px;
+    width: auto !important;
+    min-width: 239px;
+}
+
+.form-check-style {
+    border-radius: 5px;
+}
+
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* AUTOSHIP CONFIRMATION PAGE
+-------------------------------------------------- */
+.confirmation-bckg {
+    background-color: #ececec;
+    padding: 30px;
+}
+
+.white-bck {
+    background-color: #fff;
+    padding: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.next-notice {
+    color: #00b388;
+    text-transform: uppercase;
+}
+
+.table-border-none {
+    border: 0px !important;
+}
+
+.tb-pad {
+    padding: 15px !important;
+}
+
+.grand-total {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.border-thick {
+    border-top: 2px solid #333333;
+}
+
+.table-padding {
+    padding: 20px 0 0;
+}
+
+
+/* FOOTER
+-------------------------------------------------- */
+
+.footerbar{
+    margin-top:0px;
+    background-color:#00b388;
+    height:0px;
+    width:100%;
+    visibility: hidden;
+}
+
+footer{
+    background-color:#333333;
+    height:auto;
+    width:100%;
+    padding:50px 0;
+    color:#999999;
+}
+
+.footertitle{
+    font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+footer a:link{
+    color:#c2c2c2;
+    font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+}
+
+
+.footer-about {
+    color:#c2c2c2 !important;
+    line-height: 1.57;
+    font-size: 14px;
+    text-transform: none;
+}
+
+
+.footer-title {
+    font-weight: bold;
+    color:#00b388 !important;
+    font-size: 13px;
+    text-transform: none;
+}
+
+.footer-aboutus {
+    color:#c2c2c2 !important;
+    font-size: 13px;
+    text-transform: none;
+}
+
+.footer-aboutus .footer-link {  
+    font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+    color:#c2c2c2;
+    text-decoration: none;
+}
+
+.footer-aboutus .footer-link:hover {
+    text-decoration: underline;
+    color: #fff !important;
+}
+
+.footer-aboutus .footer-link:active:focus {
+    color: #fff !important;
+}
+
+.footer-aboutus a:focus {
+    text-decoration: underline;
+    color: #fff !important;
+}
+
+.footer-cta {
+    display: inline-block;
+}
+
+.footer-cta .footer-link {
+    font-family:'Roboto Condensed', Helvetica, Arial, sans-serif;
+    color: #00b388 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.footer-cta .footer-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-cta .footer-link:active:focus {
+    color: #00b388;
+}
+
+
+.lm-green {
+    border-top: 1px solid #00b388 !important;
+    margin-top: 10px !important;
+}
+
+.footerlast{
+    border-top: 1px solid #565656;
+    background-color:#222222;
+    width:100%;
+    text-align:center;
+    padding:15px;
+    color: #565656;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/*footer social media button*/
+
+.footer__ctas {
+    margin: 0 0 9px;
+}
+
+.footer__ctas {
+    list-style: none;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.footer .social-list {
+    margin: 0;
+    text-align: left;
+}
+
+.social-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+.social-list.social-list--small li {
+    margin: 0 6px 10px 0;
+}
+
+.social-list.social-list--small .social-list__item.social-list__item--facebook {
+    background-image: url(https://lmimirror3pvr.azureedge.net/static/resources/img/icons/3303fdb1-cb95-4cae-94d8-be23a75aa8b6/sprite_v8.png);
+    background-position: 0 -650px;
+    width: 24px;
+    height: 24px;
+}
+
+.social-list.social-list--small .social-list__item.social-list__item--twitter {
+    background-image: url(https://lmimirror3pvr.azureedge.net/static/resources/img/icons/3303fdb1-cb95-4cae-94d8-be23a75aa8b6/sprite_v8.png);
+    background-position: 0 -794px;
+    width: 24px;
+    height: 24px;
+}
+
+
+.social-list.social-list--small .social-list__item.social-list__item--instagram {
+    background-image: url(https://lmimirror3pvr.azureedge.net/static/resources/img/icons/3303fdb1-cb95-4cae-94d8-be23a75aa8b6/sprite_v8.png);
+    background-position: 0 -962px;
+    width: 24px;
+    height: 24px;
+}
+
+.social-list.social-list--small .social-list__item.social-list__item--pinterest {
+    background-image: url(https://lmimirror3pvr.azureedge.net/static/resources/img/icons/3303fdb1-cb95-4cae-94d8-be23a75aa8b6/sprite_v8.png);
+    background-position: 0 -1106px;
+    width: 24px;
+    height: 24px;
+}
+
+.social-list.social-list--small .social-list__item.social-list__item--youtube {
+    background-image: url(https://lmimirror3pvr.azureedge.net/static/resources/img/icons/3303fdb1-cb95-4cae-94d8-be23a75aa8b6/sprite_v8.png);
+    background-position: 0 -770px;
+    width: 24px;
+    height: 24px;
+}
+
+.social-list.social-list--small .social-list__item.social-list__item--linkedin {
+    background-image: url(https://lmimirror3pvr.azureedge.net/static/resources/img/icons/3303fdb1-cb95-4cae-94d8-be23a75aa8b6/sprite_v8.png);
+    background-position: 0 -1010px;
+    width: 24px;
+    height: 24px;
+}
+
+
+.social-list .social-list__item {
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 41px;
+    height: 40px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+/* Navbar positioning foo */
+.navbar-wrapper {
+    margin-top: 20px;
+}
+.navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 4px; /* The navbar becomes detached from the top, so we round the corners */
+}
+
+/* Bump up size of carousel content */
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.featurette-heading {
+    font-size: 48px;
+}
+}
+
+@media (max-width: 768px) {
+    .topspace{
+        padding-top:20px;
+    }
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .badge-danger {
+        font-size: 12px !important;
+    }
+
+    .invalid-feedback {
+        position: relative !important;
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .form-error-message {
+        font-size: 12px !important;
+    }
+
+    .cart-box{
+        padding: 10px;
+        background: #eee;
+        margin-top: 10px;
+    }
+
+    .program_logo {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+}
