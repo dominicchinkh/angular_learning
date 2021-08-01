@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h4 class="mb-3 title-bg">Please Enter Your Credit Card Details</h4>
+            <br>
+        
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label>Name</label>
+                    <input type="text" class="form-control" [(ngModel)]='name'>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Number</label>
+                    <input type="text" class="form-control" [(ngModel)]='number'>
+                </div>
+            </div>
+            <!--row closed-->
+    
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label>Type</label>
+                    <input type="text" class="form-control" [(ngModel)]='type'>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label>Expiry Month</label>
+                    <input type="text" class="form-control" [(ngModel)]='expiry_month'>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label>Expiry Year</label>
+                    <input type="text" class="form-control" [(ngModel)]='expiry_year'>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label>CVV</label>
+                    <input type="text" class="form-control" [(ngModel)]='cvv'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="pagepad-small"></div>
+            <h4 class="mb-3 title-bg">Terms & Conditions Title</h4>
+            <br>
+
+            <p>This is the terms and conditions body</p>
+
+            <div class="form-group">
+                <div class="form-check">
+                    <label>Agree</label>
+                    <input type="checkbox" class="form-control" [(ngModel)]='is_agree'>
+                </div>
+            </div>
+            <!--form-group closed-->
+        </div>
+    </div><!--row closed-->
+    <div class="row">
+        <div class="col-md-12">
+            <button 
+                class="btn btn-primary" 
+                [disabled]="name === '' || number === '' || type === '' || expiry_month === '' || expiry_year === '' || cvv === '' || !is_agree"
+                (click)="onSubmit()">
+                Submit
+            </button>
+        </div>
+    </div><!--row closed-->
+</div>

@@ -1,9 +1,8 @@
 (1) How tranlation work
 (2) How to link to images
 (3) How to build angular app to Symfony project
-(4) How to dynamically show and hide program component
-(5) How to route to program details page
-(6) What is the best way of HTTP get/post to Symfony web API
-(7) What is the best way to dsiplay error/warning messages?
-(8) How authentication work?
-(9) The best to deploy angular app? PROD mode?
+(4) How to route to program details page
+(5) What is the best way of HTTP get/post to Symfony web API
+(6) What is the best way to dsiplay error/warning messages?
+(7) How authentication work?
+(8) The best to deploy angular app? PROD mode?

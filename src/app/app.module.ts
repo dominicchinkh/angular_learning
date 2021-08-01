@@ -4,12 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CreditCardPaymentComponent } from './credit-card-payment/credit-card-payment.component';
+import { ProgramsComponent } from './programs/programs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CreditCardPaymentComponent,
+    ProgramsComponent
   ],
   imports: [
     BrowserModule,
